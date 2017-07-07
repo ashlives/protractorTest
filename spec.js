@@ -10,3 +10,10 @@ describe('Protractor Testing', function() {
         element(by.css('input.gsfi')).sendKeys('Hello testing')
     });
 });
+
+describe('Protractor Testing 2', function(){
+    it('should open the linkedin page', function() {
+        browser.get('http://www.linkedin.com');
+        expect(browser.getTitle()).toEqual('LinkedIn: Log In or Sign Up');
+    });
+});
