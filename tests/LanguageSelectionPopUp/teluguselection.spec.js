@@ -1,10 +1,6 @@
 describe('Testing Viu', function() {
-    beforeEach(function () {
+    beforeAll(function () {
         browser.get('https://viu.com');
-    });
-
-    it('should have a title', function() {
-        expect(browser.getTitle()).toContain('Viu');
     });
 
     it('Should select Telugu language', function () {
